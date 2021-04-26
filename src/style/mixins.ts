@@ -12,22 +12,22 @@ const mixins = StyleSheet.create({
   // 垂直分布，全部居中
   colCenter: {
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "center"
   },
   // 水平分布，垂直居中
   rowCenter: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "center"
   },
   // 绝对居中
   center: {
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "center"
   },
   // 头部按钮
   headerButton: {
-    paddingHorizontal: sizes.gap,
-  },
+    paddingHorizontal: sizes.gap
+  }
 });
 
 export const getHeaderButtonStyle = (
@@ -35,7 +35,7 @@ export const getHeaderButtonStyle = (
 ): { size: number; style: ViewStyle } => {
   return {
     size: size != null ? size : 16,
-    style: mixins.headerButton,
+    style: mixins.headerButton
   };
 };
 

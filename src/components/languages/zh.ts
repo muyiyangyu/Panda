@@ -11,10 +11,10 @@ export default {
   [LANGUAGE_KEYS.ENGLISH]: "英文",
   [LANGUAGE_KEYS.CHINESE]: "简体中文",
 
-  [LANGUAGE_KEYS.HOME]: "明殿",
+  [LANGUAGE_KEYS.HOME]: "首页",
   [LANGUAGE_KEYS.ORDER]: "订单",
   [LANGUAGE_KEYS.GUESTBOOK]: "四方馆",
-  [LANGUAGE_KEYS.ABOUT]: "狂浪生",
+  [LANGUAGE_KEYS.ABOUT]: "关于",
   [LANGUAGE_KEYS.MAIN]: "我的",
 
   [LANGUAGE_KEYS.ARTICLE]: "文章",

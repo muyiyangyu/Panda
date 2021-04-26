@@ -10,7 +10,7 @@ import { Appearance } from "react-native";
 
 export enum Themes {
   Default = "default",
-  Dark = "Dark",
+  Dark = "Dark"
 }
 
 type ThemeKey =
@@ -53,7 +53,7 @@ export const Default: Theme = {
   textMuted: "#eee",
 
   textTitle: "#222",
-  textLink: "#000",
+  textLink: "#000"
 };
 
 export const Dark: Theme = {
@@ -74,7 +74,7 @@ export const Dark: Theme = {
   textMuted: "#333333",
 
   textTitle: "#EEEEEE",
-  textLink: "#FFFFFF",
+  textLink: "#FFFFFF"
 };
 
 export const isDarkSystemTheme = Appearance.getColorScheme() === "dark";

@@ -6,16 +6,22 @@
  */
 
 import React from "react";
-import { ActivityIndicator, TextStyle, ViewStyle, View } from "react-native";
+import {
+  ActivityIndicator,
+  TextStyle,
+  ViewStyle,
+  View,
+  ColorValue
+} from "react-native";
 import { observer } from "mobx-react";
 import { Text } from "./text";
-import { IS_IOS } from "/config";
 import colors from "/style/colors";
 import fonts from "/style/fonts";
 import mixins from "/style/mixins";
 
 export interface IAutoActivityIndicatorProps {
   size?: number | "small" | "large";
+  color?: ColorValue;
   style?: ViewStyle;
   text?: string;
   textStyle?: TextStyle;
@@ -27,8 +33,8 @@ export const AutoActivityIndicator = observer(
       <ActivityIndicator
         animating={true}
         style={style}
-        size={props.size || "small"}
-        color={IS_IOS ? colors.secondary : colors.primary}
+        size={props.size || "large"}
+        color={props.color || "white"}
       />
     );
 
@@ -41,9 +47,9 @@ export const AutoActivityIndicator = observer(
               {
                 ...fonts.small,
                 marginTop: 5,
-                color: colors.textSecondary,
+                color: colors.textSecondary
               },
-              props.textStyle,
+              props.textStyle
             ]}>
             {props.text}
           </Text>

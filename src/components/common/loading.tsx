@@ -10,6 +10,7 @@ import { observer } from "mobx-react";
 import { ActivityIndicator, Animated, View } from "react-native";
 import { StyleSheet, Text } from "components";
 import { useFocusEffect } from "@react-navigation/native";
+import { AutoActivityIndicator } from "components/common/activity-indicator";
 
 interface ILoadingProps {
   visible: boolean;
@@ -50,8 +51,10 @@ export const Loading = observer((props: ILoadingProps) => {
             opacity: fadeAnim // Bind opacity to animated value
           }
         ]}>
-        <ActivityIndicator size="large" color="white" />
-        <Text style={styles.fadingText}>加载中...</Text>
+        <AutoActivityIndicator
+          text={"加载中..."}
+          textStyle={styles.fadingText}
+        />
       </Animated.View>
     </View>
   );
