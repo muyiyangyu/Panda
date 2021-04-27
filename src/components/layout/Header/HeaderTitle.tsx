@@ -18,8 +18,8 @@ const Layout = styled(View)`
 `;
 
 const Title = styled(Text)`
-  font-family: bold, serif;
-  font-size: large;
+  //font-family: bold;
+  //font-size: large;
   color: black;
 `;
 

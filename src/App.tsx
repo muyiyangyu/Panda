@@ -15,7 +15,10 @@ import {
 } from "react-native";
 import SplashScreen from "react-native-splash-screen";
 import { RootSiblingParent } from "react-native-root-siblings";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import {
+  initialWindowMetrics,
+  SafeAreaProvider
+} from "react-native-safe-area-context";
 //导航
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -180,7 +183,7 @@ export const App = observer(() => {
   return (
     <RootSiblingParent>
       <Provider store={optionStore}>
-        <SafeAreaProvider>
+        <SafeAreaProvider initialMetrics={initialWindowMetrics}>
           <NavigationContainer
             theme={{
               dark: optionStore.darkTheme,

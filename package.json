@@ -19,6 +19,7 @@
     "d3": "^6.7.0",
     "mobx": "^6.1.8",
     "mobx-react": "^7.1.0",
+    "moment": "^2.29.1",
     "query-string": "^7.0.0",
     "react": "16.13.1",
     "react-native": "0.63.4",

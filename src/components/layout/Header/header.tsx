@@ -27,6 +27,7 @@ const Layout = styled.View`
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  height: 10%;
   margin: 0;
   padding: 0;
   position: relative;

@@ -8,8 +8,6 @@
 import React, { Component, useRef } from "react";
 import {
   Animated,
-  Button,
-  PanResponder,
   SafeAreaView,
   StyleSheet,
   Text,
@@ -23,9 +21,9 @@ import { optionStore } from "stores/option";
 import colors from "style/colors";
 import sizes from "style/sizes";
 import { LANGUAGES } from "constants/language";
-import Svg, { Circle, Rect } from "react-native-svg";
 import { Loading } from "components/common/loading";
 import Header from "components/layout/Header/header";
+import HeaderTitle from "components/layout/Header/HeaderTitle";
 
 export interface IIndexProps extends IPageProps {}
 
@@ -48,14 +46,11 @@ export class Home extends Component<IIndexProps> {
     );
   };
 
-  render() {
+  render(): JSX.Element {
     const { styles } = obStyles;
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.container}>
-          {/*<Header>*/}
-          {/*  <Text>haha</Text>*/}
-          {/*</Header>*/}
           <Loading visible />
           <TouchableOpacity
             style={styles.toLogin}
